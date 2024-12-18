@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bee Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    <audio id="audioPlayer2" src="cash-register-kaching-sound-effect-125042.mp3" preload="auto"></audio>
+    <audio id="audioPlayer" src="mixkit-arcade-game-jump-coin-216.wav" preload="auto"></audio>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pelimain">
+        <div class="rahat">
+            <h3 class="hunajatext">Honey <br><span id="hunajac" class="hunajatext">0</span></h3>
+            <img id="mainkuva" src="lataus.png"  class="mainkuva" draggable="false">
+        </div>
+
+        <div class="upgradediv">
+            <div class="upgrades">
+                <div id="upgrade-eka"> 
+                    <div class="upgradeb">
+                        <img src="lataus (1).png" class="kuvaminer">
+                        <div class="upgrade-info">
+                            <h4>Miner</h4>
+                            <p class="amount">Amount: <span id="ekaamount">0</span></p>
+                            <p class="hpc">HPS: <span id="ekahpc">0</span></p> 
+                        </div>
+                        <div class="maksu">
+                            <p><span id="ekamaksu1">100</span></p>
+                            <img src="lataus.png" class="hunajaimg">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="upgrade-toka">
+                    <div class="upgradeb">
+                        <img src="lataus (2).png" class="kuvaminer">
+                        <div class="upgrade-info">
+                            <h4>Beehive</h4>
+                            <p class="amount">Amount: <span id="tokamount">0</span></p>
+                            <p class="hpc">HPS: <span id="tokhpc">0</span></p> 
+                        </div>
+                        <div class="maksu">
+                            <p><span id="tokamaksu">500</span></p>
+                            <img src="lataus.png" class="hunajaimg">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="upgrade-kolmas">
+                    <div class="upgradeb">
+                        <img src="lataus (3).png" class="kuvaminer">
+                        <div class="upgrade-info">
+                            <h4>Queen</h4>
+                            <p class="amount">Amount: <span id="kolmasamount">0</span></p>
+                            <p class="hpc">HPS: <span id="kolmashpc">0</span></p> 
+                        </div>
+                        <div class="maksu">
+                            <p><span id="kolmasmaksu">1000</span></p>
+                            <img src="lataus.png" class="hunajaimg">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="upgrade-neljas">
+                    <div class="upgradeb">
+                        <img src="lataus (4).png" class="kuvaminer">
+                        <div class="upgrade-info">
+                            <h4>Factory</h4>
+                            <p class="amount">Amount: <span id="neljasamount">0</span></p>
+                            <p class="hpc">HPS: <span id="neljashpc">0</span></p>
+                        </div>
+                        <div class="maksu">
+                            <p><span id="neljasmaksu">2500</span></p>
+                            <img src="lataus.png" class="hunajaimg">
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3>TOTAL <span class="hunajatext">HONEY</span> PER SECOND : <span id="totalhps1">0</span></h3>
+            </div>
+        </div>
+
+        <div class="buy-skin-section">
+            <h2>Buy a Skin</h2>
+        
+            <div class="skin-option" id="skin1">
+                <div class="skin-info">
+                    <h3>Miner Bee</h3>
+                    <p>Cost: <span class="skin-cost" id="cost1">500</span></p>
+                </div>
+                <div class="skin-image">
+                    <img src="lataus (1).png">
+                </div>
+                <button class="purchase-button" id="purchase1">Purchase</button>
+                <button class="enable-button" id="enable1" style="display: none;">Enable</button>
+            </div>
+        
+            <div class="skin-option" id="skin2">
+                <div class="skin-info">
+                    <h3>Queen</h3>
+                    <p>Cost: <span class="skin-cost" id="cost2">10000</span></p>
+                </div>
+                <div class="skin-image">
+                    <img src="lataus (3).png">
+                </div>
+                <button class="purchase-button" id="purchase2">Purchase</button>
+                <button class="enable-button" id="enable2" style="display: none;">Enable</button>
+            </div>
+        
+            <div class="skin-option active-skin" id="skin3">
+                <div class="skin-info">
+                    <h3>Regular Bee</h3>
+                </div>
+                <div class="skin-image">
+                    <img src="lataus.png">
+                </div>
+                <button class="enable-button" id="enable3">Enabled</button>
+            </div>
+        
+        </div>
+        
+        
+    </div>
+
+    <script src="main.js"></script> 
+</body>
+</html>
+
+
+
